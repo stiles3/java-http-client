@@ -61,7 +61,7 @@ abstract class AbstractRequest
 
 		String output = "";
 		BufferedReader br;
-
+        System.out.println(conn.getResponseCode());
 		Response response = new Response(conn.getResponseCode());
 
 		if (response.isOK()) {
