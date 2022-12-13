@@ -15,6 +15,9 @@ public class Configuration
     public static String toBody(final Map<String, Object> payload) {
         return Configuration.gson.toJson((Object)payload);
     }
+     public static String toBodyI(final Map<String, String> payload) {
+        return Configuration.gson.toJson((Object)payload);
+    }
     
     public static Request request() {
         return Configuration.req;

@@ -17,6 +17,9 @@ public class Lackey {
     public static Response POST(final String url, final Map<String, Object> body, final Map<String, String> config) throws IOException {
         return Configuration.request().post(url, Configuration.toBody(body), config);
     }
+      public static Response POSTI(final String url, final Map<String, String> body, final Map<String, String> config) throws IOException {
+        return Configuration.request().post(url, Configuration.toBodyI(body), config);
+    }
 
     public static Response POST(final String url, final String body, final Map<String, String> config) throws IOException {
         return Configuration.request().post(url, body, config);
